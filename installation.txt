@@ -1,0 +1,152 @@
+-- install new app
+npm init react-app app1
+cd app1
+npm start
+
+-- install npx tool--
+npm i -g npx
+
+
+https://mui.com/material-ui/getting-started/installation/
+
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @fontsource/roboto
+npm install @mui/icons-material
+
+
+--install Route package
+npm install react-router-dom@latest
+
+https://www.w3schools.com/react/react_router.asp
+//-------Placeholder-----------
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+//------------------Navigation Menu-------------
+import { Outlet, Link } from "react-router-dom";
+
+const Layout = () => {
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Outlet />
+    </>
+  )
+};
+
+export default Layout;
+
+//----Pages-------
+Home.js:
+
+const Home = () => {
+  return <h1>Home</h1>;
+};
+
+export default Home;
+
+Blogs.js:
+
+const Blogs = () => {
+  return <h1>Blog Articles</h1>;
+};
+
+export default Blogs;
+
+Contact.js:
+
+const Contact = () => {
+  return <h1>Contact Me</h1>;
+};
+
+export default Contact;
+
+NoPage.js:
+
+const NoPage = () => {
+  return <h1>404</h1>;
+};
+
+export default NoPage;
+
+/--------------------------------
+
+
+--Additional packages eg upload image:
+npm install react-hook-form 
+
+
+--Bootstrap Setup
+https://www.javatpoint.com/react-bootstrap
+ (npm install bootstrap)
+ npm install react-bootstrap bootstrap --save  
+
+add the following line at src/index.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+--install react-bootstrap-icons dependency
+npm i react-bootstrap-icons
+
+import React from ‘react’
+import { Trash } from ‘react-bootstrap-icons’
+import { PencilSquare } from ‘react-bootstrap-icons’
+function milestone() {
+return (
+<div>
+<PencilSquare size={35} />
+<Trash size={35} />
+</div>
+)
+}
+export default milestone
+
+
+--React chartjs
+npm install chart.js react-chartjs-2
+
+--Icons and Charts
+npm i bootstrap bootstrap-icons remixicon echarts react-apexcharts boxicons
+
+--Remix Icon Use in react
+https://snyk.io/advisor/npm-package/react-remix-icons
+npm install react-remix-icons
+import { BankFill } from "react-remix-icons";
+
+--Boxi Icon Use in react
+https://www.npmjs.com/package/boxicons
+https://snyk.io/advisor/npm-package/react-boxicons
+
+https://react-icons-v2.vercel.app/
+https://react-icons-v2.vercel.app/icons/bi
+
+--Charts Sample
+https://www.chartjs.org/docs/latest/
+https://www.chartjs.org/docs/latest/samples/information.html
+https://apexcharts.com/react-chart-demos/
+https://echarts.apache.org/examples/en/index.html
