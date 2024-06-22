@@ -2,7 +2,7 @@ export default function Footer(){
     return(
     <footer id="footer" className="footer">
       <div className="copyright">
-        © Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        © 2024 <strong><span>Akram Hoshen</span></strong>. All Rights Reserved
       </div>
     </footer>
 

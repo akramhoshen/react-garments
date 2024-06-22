@@ -7,14 +7,14 @@ function NavProfile() {
               <Link className="nav-link nav-profile d-flex align-items-center pe-0" to="#" data-bs-toggle="dropdown">
                 <img src="assets/img/profile-img.jpg" alt="Profile" className="rounded-circle"/>
                 <span className="d-none d-md-block dropdown-toggle ps-2">
-                  K. Anderson
+                  Akram Hoshen
                 </span>
               </Link>
               {/* End Profile Iamge Icon */}
               <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                 <li className="dropdown-header">
-                  <h6>Kevin Anderson</h6>
-                  <span>Web Designer</span>
+                  <h6>Akram Hoshen</h6>
+                  <span>Web Programmer</span>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
